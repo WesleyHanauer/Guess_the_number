@@ -1,7 +1,8 @@
 use std::io;
+use rand::Rng;
 
 fn generate_random_number() -> i32 {
-    let random_number = 1;
+    let random_number = rand::thread_rng().gen_range(0..100);
     return random_number;
 }
 
